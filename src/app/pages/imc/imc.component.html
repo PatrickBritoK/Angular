@@ -1,0 +1,24 @@
+<!-- <h1>Dados em tela</h1>
+
+<p>Nome: {{nome}}</p>
+<p>Idade: {{idade}}</p>
+<p>Está trabalhando: {{estaTrabalhando}}</p>
+
+<hr>
+
+<p>informções PC {{compurtador.marca}} - {{compurtador.processador}}</p>
+
+<p>Contas</p>
+
+<ul class="lista">
+    <li class="item">{{listaDeContas[0]}}</li>
+    <li class="item">{{listaDeContas[1]}}</li>
+</ul> -->
+
+<input (keyup)="changeAltura($event)" type="text" placeholder="Digite sua altura">
+<input (keyup)="changePeso($event)" type="text" placeholder="Digite seu peso">
+<button (click)="calcularImc()">Calcular</button>
+
+<h1>Resultado {{resultado}}</h1>
+
+<app-resultado [ResultadoComponente]="resultado"></app-resultado>
